@@ -1,0 +1,38 @@
+General Everyday Git Commands (Cheat Sheet)
+Init & Remote
+
+git init                              # start a new local repo
+git clone <url>                       # clone a repo
+git remote -v                         # list remotes
+git remote add origin <url>           # add remote
+git remote set-url origin <url>       # change remote
+
+
+Branching
+git branch                            # list branches
+git branch <name>                     # create new branch
+git checkout <name>                   # switch branch
+git checkout -b <name>                # create + switch branch
+git merge <branch>                    # merge branch into current
+
+Staging & Commit
+git status                            # check changes
+git add .                             # stage all changes
+git commit -m "message"               # commit staged changes
+git log                               # view commit history
+
+
+Pushing & Pulling
+git push origin main                  # push to remote
+git push -u origin main               # push and set upstream
+git pull origin main                  # pull updates
+git fetch origin                      # fetch remote changes
+
+
+Reset & Revert
+git reset --hard HEAD~1               # reset 1 commit back
+git revert <commit>                   # revert specific commit
+
+
+Force
+git push --force origin main          # force push (dangerous)
